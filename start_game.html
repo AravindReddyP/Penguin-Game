@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Start Game</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, rgb(100, 36, 146), rgb(252, 175, 188), violet, yellow);
+      }
+      button {
+        color: black;
+        background-color: rgb(108, 116, 79);
+        border-radius: 6px;
+        padding: 10px 10px;
+        font-size: 20px;
+        font-style: oblique;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      div.startGame {
+        text-align: center;
+        margin-top: 80px;
+        padding: 10px 10px;
+      }
+      #heading {
+        font-style: italic;
+        font-family: serif;
+        text-align: center;
+        font-size: 45px;
+        color: red;
+        font-weight: bold;
+        text-shadow: 3px 3px blue;
+        margin-top: 50px;
+      }
+
+      footer {
+        font-style: oblique;
+        text-align: center;
+        margin-top: 120px;
+        font-weight: 800;
+      }
+      #image {
+        text-align: center;
+        padding: 10px 100px;
+      }
+      img:hover {
+        transform: rotate(30deg);
+      }
+      #heading:hover {
+        transform: rotate(20deg);
+      }
+      #start:hover {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      WHACK A PENGUIN ...!!
+    </div>
+    <br />
+
+    <div id="image">
+      <img src="./Images/yeti.png" height="170px" alt="" />
+      <img src="./Images/penguin3.png" height="170px" alt="" />
+    </div>
+
+    <div class="startGame">
+      <button id="start" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+      function startGame() {
+        window.location.href = "http://127.0.0.1:5500/index.html";
+      }
+      document.getElementById("start");
+    </script>
+
+    <footer>&copy; GAME CREATED BY ARAVIND REDDY. ALL RIGHTS RESERVED.</footer>
+  </body>
+</html>

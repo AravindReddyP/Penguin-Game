@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+        background-image: linear-gradient(to right, rgb(100, 36, 146), rgb(252, 175, 188), violet, yellow);
+        border-radius: 5px;
+        font-family: Impact;
+        padding: 10px 10px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      h1 {
+        font-family: Courier, monospace;
+        font-size: 50px;
+        text-shadow: 4px 2px red;
+        font-style: italic;
+        color: rgb(145, 145, 7);
+      }
+      footer {
+        margin-top: 150px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: 100px 20px;
+        text-align: center;
+        margin-left: 550px;
+        padding: 40px 20px;
+      }
+      h3 {
+        margin-top: 70px;
+        font-size: 25px;
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ROARR...!!</h1>
+    <br />
+    <div id="container">
+      <div style="color: red;">Score:</div>
+      <div id="score"></div>
+    </div>
+
+    <script>
+      document.getElementById("score").innerHTML = localStorage.getItem("Points");
+    </script>
+
+    <a href="start_game.html">Play Again</a>
+
+    <h3>Note: To Score more points, try surviving longer.</h3>
+
+    <footer>&copy; GAME CREATED BY ARAVIND REDDY. ALL RIGHTS RESERVED.</footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(148, 99, 7);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  padding: 15px 15px;
+}
+.similar {
+  text-align: center;
+  border: 1px solid gray;
+  background-color: aquamarine;
+  /* padding: 10px; */
+}
