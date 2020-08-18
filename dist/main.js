@@ -1,16 +1,16 @@
-var totalPics = [
-  "./Images/penguin0.png",
-  "./Images/penguin1.png",
-  "./Images/penguin2.png",
-  "./Images/penguin3.png",
-  "./Images/penguin4.png",
-  "./Images/penguin5.png",
-  "./Images/penguin6.png",
-  "./Images/penguin7.png",
-  "./Images/yeti.png"
+let totalPics = [
+  './Images/penguin0.png',
+  './Images/penguin1.png',
+  './Images/penguin2.png',
+  './Images/penguin3.png',
+  './Images/penguin4.png',
+  './Images/penguin5.png',
+  './Images/penguin6.png',
+  './Images/penguin7.png',
+  './Images/yeti.png',
 ];
 
-count = 0;
+let count = 0;
 
 function randomNumber(array) {
   var i = array.length,
@@ -37,12 +37,12 @@ var ranNums = randomNumber([0, 1, 2, 3, 4, 5, 6, 7, 8]);
 function changeImageOne(e) {
   count++;
   let i = 0;
-  document.getElementById("oneImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('oneImg').src = `${totalPics[ranNums[i]]}`;
 
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
-    window.location.href = "http://127.0.0.1:5500/roarr.html";
+  if (x == './Images/yeti.png') {
+    window.location.href = 'http://127.0.0.1:5500/roarr.html';
   }
   countPoints();
   return;
@@ -51,10 +51,10 @@ function changeImageOne(e) {
 function changeImageTwo(e) {
   count++;
   let i = 1;
-  document.getElementById("twoImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('twoImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -64,10 +64,10 @@ function changeImageTwo(e) {
 function changeImageThree(e) {
   count++;
   let i = 2;
-  document.getElementById("threeImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('threeImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -77,10 +77,10 @@ function changeImageThree(e) {
 function changeImageFour(e) {
   count++;
   let i = 3;
-  document.getElementById("fourImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('fourImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -90,10 +90,10 @@ function changeImageFour(e) {
 function changeImageFive(e) {
   count++;
   let i = 4;
-  document.getElementById("fiveImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('fiveImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -103,10 +103,10 @@ function changeImageFive(e) {
 function changeImageSix(e) {
   count++;
   let i = 5;
-  document.getElementById("sixImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('sixImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -116,10 +116,10 @@ function changeImageSix(e) {
 function changeImageSeven(e) {
   count++;
   let i = 6;
-  document.getElementById("sevenImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('sevenImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -129,10 +129,10 @@ function changeImageSeven(e) {
 function changeImageEight(e) {
   count++;
   let i = 7;
-  document.getElementById("eightImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('eightImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -142,10 +142,10 @@ function changeImageEight(e) {
 function changeImageNine(e) {
   count++;
   let i = 8;
-  document.getElementById("nineImg").src = `${totalPics[ranNums[i]]}`;
+  document.getElementById('nineImg').src = `${totalPics[ranNums[i]]}`;
   var x = `${totalPics[ranNums[i]]}`;
 
-  if (x == "./Images/yeti.png") {
+  if (x == './Images/yeti.png') {
     roar();
   }
   countPoints();
@@ -153,11 +153,11 @@ function changeImageNine(e) {
 }
 
 function roar() {
-  window.location.href = "http://127.0.0.1:5500/roarr.html";
+  window.location.href = 'http://127.0.0.1:5500/roarr.html';
 }
 
 function countPoints() {
   const points = 25;
   Total_Points = count * points;
-  localStorage.setItem("Points", Total_Points);
+  localStorage.setItem('Points', Total_Points);
 }
