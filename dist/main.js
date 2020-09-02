@@ -153,7 +153,7 @@ function changeImageNine(e) {
 }
 
 function roar() {
-  window.location.href = 'http://127.0.0.1:5500/roarr.html';
+  window.location.href = 'roarr.html';
 }
 
 function countPoints() {
